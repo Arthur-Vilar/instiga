@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+#bg-image{
+    flex-grow: 1;
+    background-image: url(../images/bg-image.jpeg);
+    background-size: cover;
+    background-position: center top;
+}
+
+main{
+    width: 437px;
+    padding: 2.5rem 5rem;
+}
+
+#logos{
+    margin: auto;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#logos > img:first-child{
+    height: 3rem;
+}
+
+#logos > img:last-child{
+    height: 5rem;
+}
+
+
+@media screen and (min-width:1700px){
+    main{
+        width: 50rem;
+    }
+}
