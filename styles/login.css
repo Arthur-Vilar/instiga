@@ -23,27 +23,141 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(../images/bg-img-ofc.png);
+    background-image: url(../images/celular-bg.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 main{
-    border-radius: ;
+    border-radius: 20px;
     background-color: white;
     width: 280px;
     height: 500px;
     margin: auto;
+    padding-block: 2rem;
 }
 
 #logos{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:85%;
+    margin: 0 auto 3rem;
 }
 #logos img:first-child{
-    width: 80px;
-1
+    width: 85px;
+    height: 30px;
 }
 #logos img:last-child{
     width: 50px;
+}
+
+form{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+}
+.form-area label{
+    font-size: 2rem;
+    margin-left: .5rem;
+    text-align: left;
+}
+.form-area input{
+    border: 2px solid var(--princ);
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 7px;
+}
+#esqueceusenha{
+    margin-top: .3rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+button{
+    border-radius: 20px;
+    cursor: pointer;
+    height: 4rem;
+}
+
+#login{
+    background-color: var(--princ);
+    color: white;
+}
+
+#connect{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-block: 1rem;
+}
+
+#connect:after, #connect:before{
+    margin: 1.4rem .8rem;
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 55px;
+    background-color: black;
+}
+
+#cadastro{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#Google{
+    background-color: white;
+    border: 2px solid var(--princ);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#google a{
+
+    
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: url(../images/tablet-bg.jpg);
+    }
+}
+
+@media screen and (min-width: 1400px ){
+    body{
+        background-image:unset;
+    }
+
+    main{
+        border-radius: 0;
+    }
+
+    #bg-image{
+        background-image: url(../images/notebook-bg.png);
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    #bg-image{
+        background-color: green;
+        width: 300px;
+        height: 100vh;
+    }
 }
