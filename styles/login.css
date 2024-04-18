@@ -21,8 +21,10 @@ html{
 body{
     display: flex;
     align-items: center;
+
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     background-image: url(../images/celular-bg.png);
     background-position: center center;
     background-size: cover;
@@ -32,7 +34,7 @@ body{
 main{
     border-radius: 20px;
     background-color: white;
-    width: 280px;
+    width: 300px;
     height: 500px;
     margin: auto;
     padding-block: 2rem;
@@ -42,11 +44,11 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width:85%;
+    width:80%;
     margin: 0 auto 3rem;
 }
 #logos img:first-child{
-    width: 85px;
+    width: 95px;
     height: 30px;
 }
 #logos img:last-child{
@@ -78,7 +80,7 @@ fieldset{
 }
 .form-area input{
     border: 2px solid var(--princ);
-    height: 2.5rem;
+    height: 3rem;
     width: 100%;
     border-radius: 7px;
 }
@@ -92,6 +94,7 @@ button{
     border-radius: 20px;
     cursor: pointer;
     height: 4rem;
+    font-size: 1.6rem;
 }
 
 #login{
@@ -102,7 +105,7 @@ button{
 #connect{
     text-align: center;
     font-size: 1.8rem;
-    margin-block: 1rem;
+    margin-block: .7rem;
 }
 
 #connect:after, #connect:before{
@@ -116,8 +119,9 @@ button{
 }
 
 #cadastro{
+    margin-block: .5rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 #Google{
@@ -128,35 +132,80 @@ button{
     justify-content: center;
 
 }
-#google a{
-
-    
+#Google img{
+    width: 32px;
 }
+
 
 @media screen and (min-width: 768px){
     body{
         background-image: url(../images/tablet-bg.jpg);
+    }
+
+    main{
+        width: 400px;
+        height: 530px;
+    }
+
+    .form-area input{
+        height: 4rem;
     }
 }
 
 @media screen and (min-width: 1400px ){
     body{
         background-image:unset;
+        display: flex;
+
     }
 
     main{
         border-radius: 0;
+        width: 500px;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+
     }
 
     #bg-image{
         background-image: url(../images/notebook-bg.png);
-        background-color: green;
+        flex-grow: 1;
+        width: 200px;
+        height:100%;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    
+    #logos{
+        margin-block: 3rem;
+    }
+    #logos img:first-child{
+        width: 120px;
+    }
+    #logos img:last-child{
+        width: 70px;
+    }
+    
+    fieldset{
+        gap: 3rem;
+    }
+    .form-area label{
+        margin-bottom: .7rem;
+    }
+
+
+    #connect{
+        margin-block: 1rem;
+    }
+
+    #cadastro{
+        margin-top: 3rem;
     }
 }
 
 @media screen and (min-width: 1700px){
     #bg-image{
-        background-color: green;
         width: 300px;
         height: 100vh;
     }
