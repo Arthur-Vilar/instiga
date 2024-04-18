@@ -84,6 +84,10 @@ fieldset{
     width: 100%;
     border-radius: 7px;
 }
+.form-area input:focus{
+    padding-left: 1rem;
+    background-color: rgb(231, 231, 231);
+}
 #esqueceusenha{
     margin-top: .3rem;
     text-align: right;
@@ -100,6 +104,9 @@ button{
 #login{
     background-color: var(--princ);
     color: white;
+}
+#login:hover{
+    background-color: var(--violeta-claro);
 }
 
 #connect{
@@ -131,6 +138,9 @@ button{
     align-items: center;
     justify-content: center;
 
+}
+#Google:hover{
+    background-color: rgb(236, 236, 236);
 }
 #Google img{
     width: 32px;
