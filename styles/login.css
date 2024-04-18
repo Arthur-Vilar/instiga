@@ -133,6 +133,10 @@ button{
     text-align: center;
     font-size: 1.6rem;
     font-family: Roboto;
+
+}
+a{
+    color: blue;
 }
 
 #Google{
