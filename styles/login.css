@@ -26,7 +26,7 @@ body{
     justify-content: center;
     height: 100vh;
     max-height: 100vh;
-    background-image: url(../images/celular-bg.png);
+    background-image: url(../login/login-images/celular-bg.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ a{
 
 @media screen and (min-width: 768px){
     body{
-        background-image: url(../images/tablet-bg.jpg);
+        background-image: url(../login/login-images/tablet-bg.jpg);
     }
 
     main{
@@ -187,7 +187,7 @@ a{
     }
 
     #bg-image{
-        background-image: url(../images/notebook-bg.png);
+        background-image: url(../login/login-images/notebook-bg.png);
         flex-grow: 1;
         width: 200px;
         height:100%;
