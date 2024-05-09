@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instiga</title>
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
 </head>
 
 <body>
@@ -19,32 +20,36 @@
             <img src="../images/logo_imagem.jpeg" alt="Logo">
 
         </div>
+        
         <form action="" id="form">
-
             <fieldset>
                 <div class="form-area">
-
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" autofocus>
-
                 </div>
-                <div class="form-area">
 
+                <div class="form-area">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="form-area">
                     <label for="password">Senha</label>
                     <input type="password" name="password" id="password">
-                    <a id="esqueceusenha" href="#">Esqueceu a senha?</a>
-
                 </div>
 
-                <button id="login">Login</button>
+                <div class="form-area">
+                    <label for="date"></label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <button id="cadastrar">Cadastrar-se</button>
+
+                <span id="temConta">Já possui uma conta? <a href="../login/index.html">Entrar</a></span>
 
             </fieldset>
-            
-            <p id="connect">ou</p>
-            <button id="Google"><img src="images/google.png" alt="">Google</button>
-            <p id="cadastro">Não tem conta? <a href="#">Cadastre-se</a></p>
-
         </form>
+                
 
     </main>
 </body>
