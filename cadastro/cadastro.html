@@ -25,17 +25,20 @@
             <fieldset>
                 <div class="form-area">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" autofocus>
+                    <input type="email" class="inputData" name="email" id="emailCadastro" autofocus onblur="emailValidate()">
+                    <p class="dadoInvalido">Digite um endereço de email válido!</p>
                 </div>
 
                 <div class="form-area">
                     <label for="name">Nome Completo</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" class="inputData" name="name" id="nomeCadastro" onblur="nameValidate()">
+                    <p class="dadoInvalido">Digite seu nome completo!</p>
                 </div>
 
                 <div class="form-area">
                     <label for="password">Senha</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" class="inputData" name="password" id="passwordCadastro" onblur="passwordValidate()">
+                    <p class="dadoInvalido">Sua senha deve ter entre 8 e 14 caracteres alfanuméricos!</p>
                 </div>
 
                 <button id="cadastrar">Cadastrar-se</button>

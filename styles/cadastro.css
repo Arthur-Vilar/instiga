@@ -8,7 +8,28 @@ body{
 
 .form-area input{
     background-color: rgb(231, 231, 231);
-    border: unset;
+
+}
+
+.dadoInvalido {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    display: none;
+    color: red;
+    font-weight: 600;
+}
+
+input.redBorder, input.redBorder:focus{
+    border: 2px solid red;
+}
+
+.aparecendoErro{
+    display: block;
+}
+
+.teste{
+    background-color: rebeccapurple;
 }
 
 .form-area input:focus{
@@ -27,6 +48,7 @@ body{
 
 button#cadastrar{
     background-color: var(--princ);
+    color: black;
 }
 
 button#cadastrar:hover{

@@ -75,18 +75,16 @@ fieldset{
     margin-left: .5rem;
     text-align: left;
     font-family: Roboto;
+    font-weight: 500;
 }
 .form-area input{
     border: 2px solid var(--princ);
     height: 3rem;
     width: 100%;
     border-radius: 7px;
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
 }
-
-.form-area input:hover{
-    padding-left: .5rem;
-}
-
 
 .form-area input:focus{
     padding-left: 1rem;
@@ -150,6 +148,7 @@ button{
     fieldset{
         gap: 3rem;
     }
+
     .form-area label{
         margin-bottom: .7rem;
     }
