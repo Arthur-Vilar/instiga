@@ -24,7 +24,7 @@ input.redBorder, input.redBorder:focus{
     border: 2px solid red;
 }
 
-.aparecendoErro{
+.showError{
     display: block;
 }
 
