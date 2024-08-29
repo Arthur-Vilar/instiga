@@ -30,7 +30,8 @@ main{
     border-radius: 20px;
     background-color: white;
     width: 300px;
-    height: 500px;
+    min-height: 60%;
+    max-height: 100vh;
     margin: auto;
     padding-block: 2rem;
 }
@@ -102,7 +103,8 @@ button{
 @media screen and (min-width: 768px){
     main{
         width: 400px;
-        height: 550px;
+        min-height: 580px;
+        max-height: 10vh;
     }
 
     .form-area input{
@@ -119,7 +121,8 @@ button{
     main{
         border-radius: 0;
         width: 500px;
-        height:100vh;
+        height:100%;
+        max-height: 100%;
         display: flex;
         flex-direction: column;
 

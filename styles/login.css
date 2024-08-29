@@ -2,6 +2,8 @@
     --princ: #4a1079;
     --violeta-claro: #370e58;
     --violeta-escuro: #210736;
+    --azul-claro: #23396D;
+    --azul-escuro: #0C2568;
 }
 
 body{
@@ -13,8 +15,6 @@ body{
     text-align: right;
     font-size: 1.2rem;
 }
-
-
 
 #login{
     background-color: var(--princ);
@@ -51,11 +51,12 @@ a{
 }
 
 #Google{
-    background-color: white;
+    background-color: var(--azul-claro);
     border: 2px solid var(--princ);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 
 }
 #Google:hover{
